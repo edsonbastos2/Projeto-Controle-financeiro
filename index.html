@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Controle Financeiro</title>
+</head>
+<body>
+    <div class="container">
+        <div class="principal">
+            <header class="controles">
+                <h1>Controle Financeiro</h1>
+            </header>
+            <section class="saldos">
+                <h3>Saldo Atual</h3>
+                <p data-saldo="">R$ 00,00</p>
+                <div class="receitas">
+                    <div class="receita">
+                        <h3>Receitas</h3>
+                        <p data-receita>R$ 600.00</p>
+                    </div>
+                    <div class="despesas">
+                        <h3>Despesas</h3>
+                        <p data-despesas>R$ 40.00</p>
+                    </div>
+                </div>
+            </section>
+            <section class="trasacoes">
+                <h3>Trasações</h3>
+                <ul class="lista-transacoes" data-trasaction></ul>
+            </section>
+    
+            <section class="form-trasacoes">
+                <h3>Adicionar transações</h3>
+                <form action="">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome" placeholder="Nome da trasação">
+                    <label for="valor">Valor</label>
+                    <input type="text" name="valor" id="valor" placeholder="Valor da trasação">
+                </form>
+            </section>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
